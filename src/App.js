@@ -32,15 +32,16 @@ function App() {
 
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button className="homeButtons__touchdown" onClick={ () => setHome(home => home + 7) }>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal">Home Field Goal</button>
+          <button className="homeButtons__fieldGoal" onClick={ () => setHome(home => home + 3) }>Home Field Goal</button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown">Away Touchdown</button>
-          <button className="awayButtons__fieldGoal">Away Field Goal</button>
+          <button className="awayButtons__touchdown" onClick={ () => setAway(away => away + 7) }>Away Touchdown</button>
+          <button className="awayButtons__fieldGoal" onClick={ () => setAway(away => away + 3) }>Away Field Goal</button>
         </div>
       </section>
     </div>
   );
 }
 
+// wondering if i'll ever get a chance to light up the scoreboard 💔
 export default App;
